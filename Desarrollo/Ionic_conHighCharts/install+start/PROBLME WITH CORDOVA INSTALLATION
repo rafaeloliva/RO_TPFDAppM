@@ -1,0 +1,302 @@
+PROBLME WITH CORDOVA INSTALLATION 
+
+       binary was not found in your PATH.
+
+? Install @ionic/lab? Yes
+> npm i -D -E @ionic/lab
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ @ionic/lab@3.2.0
+added 65 packages from 15 contributors, removed 1 package and audited 1556 packages in 63.056s
+
+62 packages are looking for funding
+  run `npm fund` for details
+
+found 2 vulnerabilities (1 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+> ionic-lab http://localhost:8100 --host localhost --port 8200 --project-type angular --app-name ionic-4-highcharts --app-version 0.0.1
+
+[INFO] Development server running!
+       
+       Lab: http://localhost:8200
+       Local: http://localhost:8100
+       
+       Use Ctrl+C to quit this process
+
+[INFO] Browser window opened to http://localhost:8200!
+
+^C
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ npm i cordova-res
+
+> sharp@0.25.4 install /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3/node_modules/sharp
+> (node install/libvips && node install/dll-copy && prebuild-install --runtime=napi) || (node-gyp rebuild && node install/dll-copy)
+
+info sharp Using cached /home/rafael/.npm/_libvips/libvips-8.9.1-linux-x64.tar.gz
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ cordova-res@0.15.1
+added 45 packages from 154 contributors and audited 1601 packages in 50.697s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+found 2 vulnerabilities (1 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ ionic cordova platform add android
+
+[WARN] About to integrate your app with Cordova.
+       
+       We now recommend ⚡️ Capacitor⚡️  (https://ion.link/capacitor) as the official native runtime for Ionic. To
+       learn about the differences between Capacitor and Cordova, see these docs[1]. For a getting started guide, see
+       these docs[2].
+       
+       [1]: https://ion.link/capacitor-differences-with-cordova-docs
+       [2]: https://ion.link/capacitor-using-with-ionic-docs
+       
+? Are you sure you want to continue? Yes
+> ionic integrations enable cordova
+[INFO] Downloading integration cordova
+[INFO] Copying integrations files to project
+CREATE resources
+CREATE resources/splash.png
+CREATE resources/ios
+CREATE resources/ios/splash
+CREATE resources/ios/splash/Default~iphone.png
+CREATE resources/ios/splash/Default@2x~universal~anyany.png
+CREATE resources/ios/splash/Default@2x~iphone.png
+CREATE resources/ios/splash/Default-Portrait~ipad.png
+CREATE resources/ios/splash/Default-Portrait@~ipadpro.png
+CREATE resources/ios/splash/Default-Portrait@2x~ipad.png
+CREATE resources/ios/splash/Default-Landscape~ipad.png
+CREATE resources/ios/splash/Default-Landscape@~ipadpro.png
+CREATE resources/ios/splash/Default-Landscape@2x~ipad.png
+CREATE resources/ios/splash/Default-Landscape-736h.png
+CREATE resources/ios/splash/Default-Landscape-2436h.png
+CREATE resources/ios/splash/Default-736h.png
+CREATE resources/ios/splash/Default-667h.png
+CREATE resources/ios/splash/Default-568h@2x~iphone.png
+CREATE resources/ios/splash/Default-2436h.png
+CREATE resources/ios/icon
+CREATE resources/ios/icon/icon@2x.png
+CREATE resources/ios/icon/icon.png
+CREATE resources/ios/icon/icon-small@3x.png
+CREATE resources/ios/icon/icon-small@2x.png
+CREATE resources/ios/icon/icon-small.png
+CREATE resources/ios/icon/icon-98@2x.png
+CREATE resources/ios/icon/icon-86@2x.png
+CREATE resources/ios/icon/icon-83.5@2x.png
+CREATE resources/ios/icon/icon-76@2x.png
+CREATE resources/ios/icon/icon-76.png
+CREATE resources/ios/icon/icon-72@2x.png
+CREATE resources/ios/icon/icon-72.png
+CREATE resources/ios/icon/icon-60@3x.png
+CREATE resources/ios/icon/icon-60@2x.png
+CREATE resources/ios/icon/icon-60.png
+CREATE resources/ios/icon/icon-50@2x.png
+CREATE resources/ios/icon/icon-50.png
+CREATE resources/ios/icon/icon-44@2x.png
+CREATE resources/ios/icon/icon-40@3x.png
+CREATE resources/ios/icon/icon-40@2x.png
+CREATE resources/ios/icon/icon-40.png
+CREATE resources/ios/icon/icon-29@3x.png
+CREATE resources/ios/icon/icon-29@2x.png
+CREATE resources/ios/icon/icon-29.png
+CREATE resources/ios/icon/icon-27.5@2x.png
+CREATE resources/ios/icon/icon-24@2x.png
+CREATE resources/ios/icon/icon-20@3x.png
+CREATE resources/ios/icon/icon-20@2x.png
+CREATE resources/ios/icon/icon-20.png
+CREATE resources/ios/icon/icon-1024.png
+CREATE resources/icon.png
+CREATE resources/android
+CREATE resources/android/xml
+CREATE resources/android/xml/network_security_config.xml
+CREATE resources/android/splash
+CREATE resources/android/splash/drawable-port-xxxhdpi-screen.png
+CREATE resources/android/splash/drawable-port-xxhdpi-screen.png
+CREATE resources/android/splash/drawable-port-xhdpi-screen.png
+CREATE resources/android/splash/drawable-port-mdpi-screen.png
+CREATE resources/android/splash/drawable-port-ldpi-screen.png
+CREATE resources/android/splash/drawable-port-hdpi-screen.png
+CREATE resources/android/splash/drawable-land-xxxhdpi-screen.png
+CREATE resources/android/splash/drawable-land-xxhdpi-screen.png
+CREATE resources/android/splash/drawable-land-xhdpi-screen.png
+CREATE resources/android/splash/drawable-land-mdpi-screen.png
+CREATE resources/android/splash/drawable-land-ldpi-screen.png
+CREATE resources/android/splash/drawable-land-hdpi-screen.png
+CREATE resources/android/icon
+CREATE resources/android/icon/drawable-xxxhdpi-icon.png
+CREATE resources/android/icon/drawable-xxhdpi-icon.png
+CREATE resources/android/icon/drawable-xhdpi-icon.png
+CREATE resources/android/icon/drawable-mdpi-icon.png
+CREATE resources/android/icon/drawable-ldpi-icon.png
+CREATE resources/android/icon/drawable-hdpi-icon.png
+CREATE resources/README.md
+CREATE config.xml
+[OK] Integration cordova added!
+✔ Creating ./www directory for you - done!
+> cordova platform add android
+Using cordova-fetch for cordova-android@^9.0.0
+Adding android project...
+Creating Cordova project for the Android platform:
+        Path: platforms/android
+        Package: io.ionic.starter
+        Name: MyApp
+        Activity: MainActivity
+        Android target: android-29
+Subproject Path: CordovaLib
+Subproject Path: app
+Android project created with cordova-android@9.0.0
+Plugin 'cordova-plugin-whitelist' found in config.xml... Migrating it to package.json
+Plugin 'cordova-plugin-statusbar' found in config.xml... Migrating it to package.json
+Plugin 'cordova-plugin-device' found in config.xml... Migrating it to package.json
+Plugin 'cordova-plugin-splashscreen' found in config.xml... Migrating it to package.json
+Plugin 'cordova-plugin-ionic-webview' found in config.xml... Migrating it to package.json
+Plugin 'cordova-plugin-ionic-keyboard' found in config.xml... Migrating it to package.json
+Discovered plugin "cordova-plugin-whitelist". Adding it to the project
+Installing "cordova-plugin-whitelist" for android
+
+               This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
+          
+Adding cordova-plugin-whitelist to package.json
+Discovered plugin "cordova-plugin-statusbar". Adding it to the project
+Installing "cordova-plugin-statusbar" for android
+Adding cordova-plugin-statusbar to package.json
+Discovered plugin "cordova-plugin-device". Adding it to the project
+Installing "cordova-plugin-device" for android
+Adding cordova-plugin-device to package.json
+Discovered plugin "cordova-plugin-splashscreen". Adding it to the project
+Installing "cordova-plugin-splashscreen" for android
+Adding cordova-plugin-splashscreen to package.json
+Discovered plugin "cordova-plugin-ionic-webview". Adding it to the project
+Installing "cordova-plugin-ionic-webview" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Adding cordova-plugin-ionic-webview to package.json
+Discovered plugin "cordova-plugin-ionic-keyboard". Adding it to the project
+Installing "cordova-plugin-ionic-keyboard" for android
+Adding cordova-plugin-ionic-keyboard to package.json
+[WARN] cordova-res was not found on your PATH. Please install it globally:
+       
+       npm i -g cordova-res
+       
+[WARN] Cannot generate resources without cordova-res installed.
+       
+       Once installed, you can generate resources with the following command:
+       
+       ionic cordova resources android --force
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ ionic serve --lab
+> ng run app:serve --host=localhost --port=8100
+[ng] chunk {} 0.js, 0.js.map () 31.2 kB  [rendered]
+[ng] chunk {m16} 16.js, 16.js.map () 32.8 kB  [rendered]
+[ng] chunk {bar-bar-module} bar-bar-module.js, bar-bar-module.js.map (bar-bar-module) 11.2 kB  [rendered]
+[ng] chunk {common} common.js, common.js.map (common) 14.7 kB  [rendered]
+[ng] chunk {default~bar-bar-module~dynamic-dynamic-module~pie-pie-module} default~bar-bar-module~dynamic-dynamic-module~pie-pie-module.js, default~bar-bar-module~dynamic-dynamic-module~pie-pie-module.js.map (default~bar-bar-module~dynamic-dynamic-module~pie-pie-module) 264 kB  [rendered]
+[ng] chunk {dynamic-dynamic-module} dynamic-dynamic-module.js, dynamic-dynamic-module.js.map (dynamic-dynamic-module) 8.32 kB  [rendered]
+[ng] chunk {focus-visible-15ada7f7-js} focus-visible-15ada7f7-js.js, focus-visible-15ada7f7-js.js.map (focus-visible-15ada7f7-js) 2.11 kB  [rendered]
+[ng] chunk {input-shims-b956f530-js} input-shims-b956f530-js.js, input-shims-b956f530-js.js.map (input-shims-b956f530-js) 16.3 kB  [rendered]
+[ng] chunk {keyboard-dd970efc-js} keyboard-dd970efc-js.js, keyboard-dd970efc-js.js.map (keyboard-dd970efc-js) 6.16 kB  [rendered]
+[ng] chunk {main} main.js, main.js.map (main) 21.1 kB [initial] [rendered]
+[ng] chunk {pie-pie-module} pie-pie-module.js, pie-pie-module.js.map (pie-pie-module) 19 kB  [rendered]
+[ng] chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 268 kB [initial] [rendered]
+[ng] chunk {polyfills-core-js} polyfills-core-js.js, polyfills-core-js.js.map (polyfills-core-js) 92.4 kB  [rendered]
+[ng] chunk {polyfills-css-shim} polyfills-css-shim.js, polyfills-css-shim.js.map (polyfills-css-shim) 10.5 kB  [rendered]
+[ng] chunk {polyfills-dom} polyfills-dom.js, polyfills-dom.js.map (polyfills-dom) 38.5 kB  [rendered]
+[ng] chunk {runtime} runtime.js, runtime.js.map (runtime) 9.78 kB [entry] [rendered]
+[ng] chunk {scatter-scatter-module} scatter-scatter-module.js, scatter-scatter-module.js.map (scatter-scatter-module) 5.91 kB  [rendered]
+[ng] chunk {shadow-css-fc98efba-js} shadow-css-fc98efba-js.js, shadow-css-fc98efba-js.js.map (shadow-css-fc98efba-js) 15.9 kB  [rendered]
+[ng] chunk {status-tap-a9bf301d-js} status-tap-a9bf301d-js.js, status-tap-a9bf301d-js.js.map (status-tap-a9bf301d-js) 1.6 kB  [rendered]
+[ng] chunk {styles} styles.js, styles.js.map (styles) 99.8 kB [initial] [rendered]
+[ng] chunk {swipe-back-0a6a44c8-js} swipe-back-0a6a44c8-js.js, swipe-back-0a6a44c8-js.js.map (swipe-back-0a6a44c8-js) 3.05 kB  [rendered]
+[ng] chunk {swiper-bundle-95afeea2-js} swiper-bundle-95afeea2-js.js, swiper-bundle-95afeea2-js.js.map (swiper-bundle-95afeea2-js) 200 kB  [rendered]
+[ng] chunk {tap-click-252af35a-js} tap-click-252af35a-js.js, tap-click-252af35a-js.js.map (tap-click-252af35a-js) 6.22 kB  [rendered]
+[ng] chunk {vendor} vendor.js, vendor.js.map (vendor) 5.15 MB [initial] [rendered]
+[ng] Date: 2020-08-17T00:12:20.598Z - Hash: 915b93dc6a35129b931b - Time: 48720ms
+[ng] WARNING in /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3/src/test.ts is part of the TypeScript compilation but it's unused.
+[ng] Add only entry points to the 'files' or 'include' properties in your tsconfig.
+[ng] WARNING in /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3/src/environments/environment.prod.ts is part of the TypeScript compilation but it's unused.
+[ng] Add only entry points to the 'files' or 'include' properties in your tsconfig.
+[INFO] ... and 41 additional chunks
+[ng] : Compiled successfully.
+> ionic-lab http://localhost:8100 --host localhost --port 8200 --project-type angular --app-name ionic-4-highcharts --app-version 0.0.1
+
+[INFO] Development server running!
+       
+       Lab: http://localhost:8200
+       Local: http://localhost:8100
+       
+       Use Ctrl+C to quit this process
+
+[INFO] Browser window opened to http://localhost:8200!
+
+^C
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ ionic cordova platform rm android
+> cordova platform remove android
+Removing android from cordova.platforms array in package.json
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ npm i -g cordova-res
+npm WARN checkPermissions Missing write access to /usr/lib/node_modules
+npm ERR! code EACCES
+npm ERR! syscall access
+npm ERR! path /usr/lib/node_modules
+npm ERR! errno -13
+npm ERR! Error: EACCES: permission denied, access '/usr/lib/node_modules'
+npm ERR!  [Error: EACCES: permission denied, access '/usr/lib/node_modules'] {
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/lib/node_modules'
+npm ERR! }
+npm ERR! 
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR! 
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/rafael/.npm/_logs/2020-08-17T00_17_24_341Z-debug.log
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts3$ sudo npm i -g cordova-res
+[sudo] password for rafael: 
+/usr/bin/cordova-res -> /usr/lib/node_modules/cordova-res/bin/cordova-res
+
+> sharp@0.25.4 install /usr/lib/node_modules/cordova-res/node_modules/sharp
+> (node install/libvips && node install/dll-copy && prebuild-install --runtime=napi) || (node-gyp rebuild && node install/dll-copy)
+
+info sharp Using cached /home/rafael/.npm/_libvips/libvips-8.9.1-linux-x64.tar.gz
+ERR! sharp EACCES: permission denied, mkdir '/usr/lib/node_modules/cordova-res/node_modules/sharp/vendor'
+info sharp Are you trying to install as a root or sudo user? Try again with the --unsafe-perm flag
+info sharp Attempting to build from source via node-gyp but this may fail due to the above error
+info sharp Please see https://sharp.pixelplumbing.com/install for required dependencies
+gyp WARN EACCES current user ("nobody") does not have permission to access the dev dir "/home/rafael/.cache/node-gyp/12.18.3"
+gyp WARN EACCES attempting to reinstall using temporary dev dir "/usr/lib/node_modules/cordova-res/node_modules/sharp/.node-gyp"
+gyp WARN install got an error, rolling back install
+gyp WARN install got an error, rolling back install
+gyp ERR! configure error 
+gyp ERR! stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/cordova-res/node_modules/sharp/.node-gyp'
+gyp ERR! System Linux 5.4.0-42-generic
+gyp ERR! command "/usr/bin/node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /usr/lib/node_modules/cordova-res/node_modules/sharp
+gyp ERR! node -v v12.18.3
+gyp ERR! node-gyp -v v5.1.0
+gyp ERR! not ok 
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! sharp@0.25.4 install: `(node install/libvips && node install/dll-copy && prebuild-install --runtime=napi) || (node-gyp rebuild && node install/dll-copy)`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the sharp@0.25.4 install script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/rafael/.npm/_logs/2020-08-17T00_18_29_812Z-debug.log

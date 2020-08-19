@@ -1,0 +1,658 @@
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts$ ionic start ionic-4-highcharts sidemenu
+
+Pick a framework! 😁
+
+Please select the JavaScript framework to use for your new app. To bypass this
+prompt next time, supply a value for the --type option.
+
+? Framework: Angular
+? ./ionic-4-highcharts exists. Overwrite? Yes
+✔ Preparing directory ./ionic-4-highcharts - done!
+✔ Downloading and extracting sidemenu starter - done!
+? Integrate your new app with Capacitor to target native iOS and Android? No
+
+Installing dependencies may take several minutes.
+
+  ──────────────────────────────────────────────────────────────────────
+
+      Ionic Enterprise, platform and solutions for teams by Ionic
+
+                  Powerful library of native APIs ⚡
+                 A supercharged platform for teams 💪
+
+                  👉  https://ion.link/enterprise  👈
+
+  ──────────────────────────────────────────────────────────────────────
+
+
+> npm i
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+
+> core-js@3.6.4 postinstall /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> @angular/cli@9.1.12 postinstall /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules/rollup/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN notsup Unsupported engine for watchpack-chokidar2@2.0.0: wanted: {"node":"<8.10.0"} (current: {"node":"12.18.3","npm":"6.14.6"})
+npm WARN notsup Not compatible with your version of node/npm: watchpack-chokidar2@2.0.0
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/watchpack-chokidar2/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules/webpack-dev-server/node_modules/chokidar/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1485 packages from 1215 contributors and audited 1490 packages in 166.67s
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 2 vulnerabilities (1 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+> git init
+Initialized empty Git repository in /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/.git/
+
+Join the Ionic Community! 💙
+
+Connect with millions of developers on the Ionic Forum and get access to live
+events, news updates, and more.
+
+? Create free Ionic account? No
+> git add -A
+> git commit -m "Initial commit" --no-gpg-sign
+[master (root-commit) c7e72e4] Initial commit
+ 38 files changed, 15291 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 angular.json
+ create mode 100644 browserslist
+ create mode 100644 e2e/protractor.conf.js
+ create mode 100644 e2e/src/app.e2e-spec.ts
+ create mode 100644 e2e/src/app.po.ts
+ create mode 100644 e2e/tsconfig.json
+ create mode 100644 ionic.config.json
+ create mode 100644 karma.conf.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/app/app-routing.module.ts
+ create mode 100644 src/app/app.component.html
+ create mode 100644 src/app/app.component.scss
+ create mode 100644 src/app/app.component.spec.ts
+ create mode 100644 src/app/app.component.ts
+ create mode 100644 src/app/app.module.ts
+ create mode 100644 src/app/folder/folder-routing.module.ts
+ create mode 100644 src/app/folder/folder.module.ts
+ create mode 100644 src/app/folder/folder.page.html
+ create mode 100644 src/app/folder/folder.page.scss
+ create mode 100644 src/app/folder/folder.page.spec.ts
+ create mode 100644 src/app/folder/folder.page.ts
+ create mode 100644 src/assets/icon/favicon.png
+ create mode 100644 src/assets/shapes.svg
+ create mode 100644 src/environments/environment.prod.ts
+ create mode 100644 src/environments/environment.ts
+ create mode 100644 src/global.scss
+ create mode 100644 src/index.html
+ create mode 100644 src/main.ts
+ create mode 100644 src/polyfills.ts
+ create mode 100644 src/test.ts
+ create mode 100644 src/theme/variables.scss
+ create mode 100644 src/zone-flags.ts
+ create mode 100644 tsconfig.app.json
+ create mode 100644 tsconfig.json
+ create mode 100644 tsconfig.spec.json
+ create mode 100644 tslint.json
+
+Your Ionic app is ready! Follow these next steps:
+
+- Go to your new project: cd ./ionic-4-highcharts
+- Run ionic serve within the app directory to see your app in the browser
+- Run ionic capacitor add to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using cordova-res --skip-config
+--copy
+- Explore the Ionic docs for components, tutorials, and more:
+https://ion.link/docs
+- Building an enterprise app? Ionic has Enterprise Support and Features:
+https://ion.link/enterprise-edition
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts$ ls
+ionic-4-highcharts  ionic-4-highcharts-master
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts$ 
+
+
+
+OVERWRITES OLD..
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ ionic info
+
+Ionic:
+
+   Ionic CLI                     : 6.11.0 (/usr/lib/node_modules/@ionic/cli)
+   Ionic Framework               : @ionic/angular 5.3.1
+   @angular-devkit/build-angular : 0.901.12
+   @angular-devkit/schematics    : 9.1.12
+   @angular/cli                  : 9.1.12
+   @ionic/angular-toolkit        : 2.3.0
+
+Utility:
+
+   cordova-res : not installed
+   native-run  : 1.0.0
+
+System:
+
+   NodeJS : v12.18.3 (/usr/bin/node)
+   npm    : 6.14.6
+   OS     : Linux 5.4
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ 
+
+
+
+
+ionic serve -o
+
+.....rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ ionic serve -o
+> ng run app:serve --host=localhost --port=8100
+[ng] Compiling @angular/core : es2015 as esm2015
+[ng] Compiling @angular/common : es2015 as esm2015
+[ng] Compiling @angular/common/http : es2015 as esm2015
+[ng] Compiling @angular/common/http/testing : es2015 as esm2015
+[ng] Compiling @angular/core/testing : es2015 as esm2015
+[ng] Compiling @angular/platform-browser : es2015 as esm2015
+[ng] Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+[ng] Compiling @angular/platform-browser/testing : es2015 as esm2015
+[ng] Compiling @angular/compiler/testing : es2015 as esm2015
+[ng] Compiling @angular/platform-browser-dynamic/testing : es2015 as esm2015
+[ng] Compiling @angular/common/testing : es2015 as esm2015
+[ng] Compiling @angular/router : es2015 as esm2015
+[ng] Compiling @angular/router/testing : es2015 as esm2015
+[ng] Compiling @angular/forms : es2015 as esm2015
+[ng] Compiling @ionic/angular : es2015 as esm2015
+[ng] Compiling @ionic-native/core : module as esm5
+[ng] Compiling @ionic-native/splash-screen : module as esm5
+[ng] Compiling @ionic-native/status-bar : module as esm5
+[ng] chunk {} 0.js, 0.js.map () 31.2 kB  [rendered]
+[ng] chunk {m16} 16.js, 16.js.map () 32.8 kB  [rendered]
+[ng] chunk {common} common.js, common.js.map (common) 14.7 kB  [rendered]
+[ng] chunk {focus-visible-15ada7f7-js} focus-visible-15ada7f7-js.js, focus-visible-15ada7f7-js.js.map (focus-visible-15ada7f7-js) 2.11 kB  [rendered]
+[ng] chunk {folder-folder-module} folder-folder-module.js, folder-folder-module.js.map (folder-folder-module) 9.71 kB  [rendered]
+[ng] chunk {input-shims-b956f530-js} input-shims-b956f530-js.js, input-shims-b956f530-js.js.map (input-shims-b956f530-js) 16.3 kB  [rendered]
+[ng] chunk {keyboard-dd970efc-js} keyboard-dd970efc-js.js, keyboard-dd970efc-js.js.map (keyboard-dd970efc-js) 6.16 kB  [rendered]
+[ng] chunk {main} main.js, main.js.map (main) 30.8 kB [initial] [rendered]
+[ng] chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 268 kB [initial] [rendered]
+[ng] chunk {polyfills-core-js} polyfills-core-js.js, polyfills-core-js.js.map (polyfills-core-js) 92.4 kB  [rendered]
+[ng] chunk {polyfills-css-shim} polyfills-css-shim.js, polyfills-css-shim.js.map (polyfills-css-shim) 10.5 kB  [rendered]
+[ng] chunk {polyfills-dom} polyfills-dom.js, polyfills-dom.js.map (polyfills-dom) 38.5 kB  [rendered]
+[ng] chunk {runtime} runtime.js, runtime.js.map (runtime) 9.54 kB [entry] [rendered]
+[ng] chunk {shadow-css-fc98efba-js} shadow-css-fc98efba-js.js, shadow-css-fc98efba-js.js.map (shadow-css-fc98efba-js) 15.9 kB  [rendered]
+[ng] chunk {status-tap-a9bf301d-js} status-tap-a9bf301d-js.js, status-tap-a9bf301d-js.js.map (status-tap-a9bf301d-js) 1.6 kB  [rendered]
+[ng] chunk {styles} styles.js, styles.js.map (styles) 99.8 kB [initial] [rendered]
+[ng] chunk {swipe-back-0a6a44c8-js} swipe-back-0a6a44c8-js.js, swipe-back-0a6a44c8-js.js.map (swipe-back-0a6a44c8-js) 3.05 kB  [rendered]
+hunk {swiper-bundle-95afeea2-js} swiper-bundle-95afeea2-js.js, swiper-bundle-95afeea2-js.js.map (swiper-bundle-95afeea2-js) 200 kB  [rendered]
+[ng] chunk {tap-click-252af35a-js} tap-click-252af35a-js.js, tap-click-252af35a-js.js.map (tap-click-252af35a-js) 6.22 kB  [rendered]
+[ng] chunk {vendor} vendor.js, vendor.js.map (vendor) 5.15 MB [initial] [rendered]
+[ng] Date: 2020-08-16T20:22:11.677Z - Hash: f4325df07774a97731e6 - Time: 37220ms
+[ng] WARNING in /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/src/test.ts is part of the TypeScript compilation but it's unused.
+[ng] Add only entry points to the 'files' or 'include' properties in your tsconfig.
+[ng] WARNING in /home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/src/environments/environment.prod.ts is part of the TypeScript compilation but it's unused.
+[ng] Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+[INFO] Development server running!
+       
+       Local: http://localhost:8100
+       
+       Use Ctrl+C to quit this process
+
+[INFO] ... and 41 additional chunks
+[ng] : Compiled successfully.
+[INFO] Browser window opened to http://localhost:8100!
+
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-three-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-three-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-three.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-two-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-two-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/reorder-two.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/repeat-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/repeat-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/repeat.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/resize-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/resize-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/resize.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/restaurant-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/restaurant-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/restaurant.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-back-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-back-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-back.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-forward-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-forward-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-down-forward.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-back-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-back-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-back.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-forward-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-forward-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/return-up-forward.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/ribbon-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/ribbon-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/ribbon.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rocket-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rocket-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rocket.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rose-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rose-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/rose.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sad-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sad-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sad.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/save-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/save-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/save.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan-circle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan-circle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan-circle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/scan.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/school-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/school-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/school.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search-circle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search-circle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search-circle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/search.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/send-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/send-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/send.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/server-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/server-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/server.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/settings-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/settings-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/settings.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shapes-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shapes-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shapes.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share-social-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share-social-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share-social.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/share.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield-checkmark-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield-checkmark-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield-checkmark.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shield.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shirt-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shirt-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shirt.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shuffle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shuffle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/shuffle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/skull-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/skull-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/skull.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/snow-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/snow-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/snow.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/speedometer-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/speedometer-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/speedometer.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/square-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/square-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/square.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star-half-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star-half-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star-half.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/star.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stats-chart-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stats-chart-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stats-chart.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop-circle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop-circle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop-circle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stop.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stopwatch-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stopwatch-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/stopwatch.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/subway-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/subway-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/subway.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sunny-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sunny-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sunny.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-horizontal-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-horizontal-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-horizontal.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-vertical-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-vertical-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/swap-vertical.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync-circle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync-circle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync-circle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/sync.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-landscape-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-landscape-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-landscape.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-portrait-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-portrait-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tablet-portrait.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tennisball-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tennisball-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tennisball.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/terminal-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/terminal-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/terminal.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/text-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/text-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/text.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thermometer-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thermometer-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thermometer.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-down-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-down-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-down.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-up-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-up-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thumbs-up.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thunderstorm-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thunderstorm-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/thunderstorm.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/time-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/time-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/time.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/timer-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/timer-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/timer.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/today-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/today-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/today.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/toggle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/toggle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/toggle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trail-sign-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trail-sign-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trail-sign.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/train-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/train-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/train.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/transgender-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/transgender-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/transgender.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash-bin-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash-bin-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash-bin.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trash.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-down-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-down-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-down.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-up-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-up-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trending-up.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/triangle-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/triangle-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/triangle.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trophy-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trophy-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/trophy.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tv-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tv-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/tv.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/umbrella-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/umbrella-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/umbrella.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/videocam-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/videocam-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/videocam.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-high-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-high-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-high.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-low-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-low-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-low.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-medium-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-medium-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-medium.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-mute-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-mute-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-mute.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-off-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-off-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/volume-off.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/walk-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/walk-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/walk.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wallet-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wallet-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wallet.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/warning-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/warning-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/warning.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/watch-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/watch-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/watch.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/water-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/water-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/water.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wifi-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wifi-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wifi.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wine-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wine-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/wine.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/woman-outline.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/woman-sharp.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/node_modules/ionicons/dist/ionicons/svg/woman.svg'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/.gitignore'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/angular.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/browserslist'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/ionic.config.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/karma.conf.js'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/package-lock.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/package.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/tsconfig.app.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/tsconfig.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/tsconfig.spec.json'
+[ng] Error from chokidar (/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/rafael/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts/tslint.json'
+[ng] Date: 2020-08-16T20:22:18.060Z - Hash: 227e483e2a00b73226c3
+[ng] 61 unchanged chunks
+[ng] Time: 3769ms
+[ng] : Compiled successfully.
+
+
+
+POSSIBLE SOLUTION FROM STACKOVERFLOW
+https://stackoverflow.com/questions/61605380/angular-9-issue-unable-to-run-the-initial-application
+
+npm install chokidar
+
+
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ npm install chokidar
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ chokidar@3.4.2
+removed 1 package, updated 1 package and audited 1490 packages in 42.568s
+
+NO RESULT
+
+SEE
+https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers#the-technical-details
+
+$ cat /proc/sys/fs/inotify/max_user_watches
+8192
+
+SO TO INCREMENT:
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ cat /proc/sys/fs/inotify/max_user_watches
+8192
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+[sudo] password for rafael: 
+Sorry, try again.
+[sudo] password for rafael: 
+fs.inotify.max_user_watches=524288
+fs.inotify.max_user_watches = 524288
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$
+ cat /proc/sys/fs/inotify/max_user_watches
+524288
+
+CON ESTO ANDA JOYA!!! 16.8.20 18 HS
+
+
+AHORA CORREMOS INSTALADOR DE HIGHCHARTS
+	npm install highcharts --save
+
+ npm install highcharts --save
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ highcharts@8.1.2
+added 1 package from 1 contributor, removed 1 package and audited 1491 packages in 49.221s
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 2 vulnerabilities (1 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ npm audit
+                                                                                
+                       === npm audit security report ===                        
+                                                                                
+# Run  npm install --save-dev protractor@7.0.0  to resolve 1 vulnerability
+SEMVER WARNING: Recommended action is a potentially breaking change
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ Low           │ Prototype Pollution                                          │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ yargs-parser                                                 │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ protractor [dev]                                             │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ protractor > yargs > yargs-parser                            │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1500                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                Manual Review                                 │
+│            Some vulnerabilities require your attention to resolve            │
+│                                                                              │
+│         Visit https://go.npm.me/audit-guide for additional guidance          │
+└──────────────────────────────────────────────────────────────────────────────┘
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Remote Code Execution                                        │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ serialize-javascript                                         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Patched in    │ >=3.1.0                                                      │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ @ionic/angular-toolkit [dev]                                 │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ @ionic/angular-toolkit > copy-webpack-plugin >               │
+│               │ serialize-javascript                                         │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1548                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+found 2 vulnerabilities (1 low, 1 high) in 1491 scanned packages
+  1 vulnerability requires semver-major dependency updates.
+  1 vulnerability requires manual review. See the full report for details.
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ 
+
+NO ARREGLAMOS NADA POR LAS DUDAS..
+
+CREAMOS NUEVA PAGE LLAMADA BAR:
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ ionic generate page bar
+> ng generate page bar --project=app
+? Would you like to share anonymous usage data about this project with the Angular Team at
+Google under Google’s Privacy Policy at https://policies.google.com/privacy? For more
+details and how to change this setting, see http://angular.io/analytics. Yes
+
+Thank you for sharing anonymous usage data. Would you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics project off
+
+CREATE src/app/bar/bar-routing.module.ts (335 bytes)
+CREATE src/app/bar/bar.module.ts (451 bytes)
+CREATE src/app/bar/bar.page.scss (0 bytes)
+CREATE src/app/bar/bar.page.html (122 bytes)
+CREATE src/app/bar/bar.page.spec.ts (626 bytes)
+CREATE src/app/bar/bar.page.ts (244 bytes)
+UPDATE src/app/app-routing.module.ts (617 bytes)
+[OK] Generated page!
+rafael@rafael-UB18:~/MIoT2020/DAppM/practica/TPsIonic/TutorialIonic4HighCharts/ionic-4-highcharts$ 
+
+ME CREA EL MODULO EN src/app/bar
+y hace update de app-routing.module.ts asi:
+
+
+//****************************************************************
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'folder/Inbox',
+    pathMatch: 'full'
+  },
+  {
+    path: 'folder/:id',
+    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'bar',
+    loadChildren: () => import('./bar/bar.module').then( m => m.BarPageModule)
+  }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+//****************************************************************
+
+
+
+
+

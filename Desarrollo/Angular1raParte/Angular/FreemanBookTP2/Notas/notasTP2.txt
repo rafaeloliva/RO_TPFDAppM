@@ -1,0 +1,92 @@
+19.7.20 
+ANTES DE CORRER todo CON ng serve
+npm install
+
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo$ ls
+angular.json  browserslist  e2e  karma.conf.js  package.json  package-lock.json  src  tsconfig.app.json  tsconfig.json  tsconfig.spec.json  tslint.json
+rafael@rafael-UB18:~/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo$ npm install
+
+> core-js@3.6.0 postinstall /home/rafael/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> @angular/cli@9.0.3 postinstall /home/rafael/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. Yes
+
+Thank you for sharing anonymous usage data. If you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics off
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules/watchpack/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1320 packages from 1116 contributors and audited 1462 packages in 356.892s
+
+34 packages are looking for funding
+  run `npm fund` for details
+
+found 304 vulnerabilities (300 low, 2 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+
+rafael@rafael-UB18:~/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo$ ls
+angular.json  browserslist  e2e  karma.conf.js  node_modules  package.json  package-lock.json  src  tsconfig.app.json  tsconfig.json  tsconfig.spec.json  tslint.json
+rafael@rafael-UB18:~/MIoT2020/DAppM/repo_book/pro-angular-9/02 - Your First Angular App/todo$ ng serve
+Your global Angular CLI version (10.0.0) is greater than your local
+version (9.0.3). The local Angular CLI version is used.
+
+To disable this warning use "ng config -g cli.warnings.versionMismatch false".
+? Would you like to share anonymous usage data about this project with the Angular Team at
+Google under Google’s Privacy Policy at https://policies.google.com/privacy? For more
+details and how to change this setting, see http://angular.io/analytics. Yes
+
+Thank you for sharing anonymous usage data. Would you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics project off
+
+0% compiling
+Compiling @angular/core : es2015 as esm2015
+
+Compiling @angular/common : es2015 as esm2015
+
+Compiling @angular/platform-browser : es2015 as esm2015
+
+Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+
+Compiling @angular/forms : es2015 as esm2015
+
+chunk {main} main.js, main.js.map (main) 19.8 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 140 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.15 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 1.17 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 2.99 MB [initial] [rendered]
+Date: 2020-07-19T15:41:42.566Z - Hash: 2e9fbf0d20ea511d2389 - Time: 50800ms
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+: Compiled successfully.
+
+Date: 2020-07-19T15:41:46.506Z - Hash: 2e9fbf0d20ea511d2389
+5 unchanged chunks
+
+Time: 2570ms
+: Compiled successfully.
+
+FUNCIONA!! Ver pantalla Salida en C:/MIOT2020/Materias/DAM/Practica/book/PT2_orig
