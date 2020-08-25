@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-button routerLink="/home" routerDirection="back">
+              <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title>Dispositivo - {{this.idDispositivo}}: Ultimo valor almacenado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="highcharts" style="width:100%; height:300px;"></div>
+  <ion-item> 
+  <ion-button shape="round" fill="outline" (click)='switchElectrovalvula()' [appResaltarBoton]='color'>{{evToggle}} Electroválvula</ion-button>
+</ion-item>
+<ion-item routerLink="/log-sensor/{{this.idDispositivo}}" routerDirection="root"> 
+  <ion-button shape="round" fill="outline" [appResaltarBoton]='color'>Ver Log Sensor</ion-button>
+</ion-item>
+<ion-item routerLink="/log-ev/{{this.idDispositivo}}" routerDirection="root"> 
+  <ion-button shape="round" fill="outline" [appResaltarBoton]='color'>Ver Log Electroválvula</ion-button>
+</ion-item>
+<!-- Agregados para generar valores aleatorios -->
+<ion-list-header color="light">Sensor {{this.idDispositivo}} </ion-list-header>
+<ion-card class="welcome-card">
+  <ion-card-header>
+    <ion-card-title>Lecturas continuas tensiómetro {{this.idDispositivo}} </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <div id="dynamicSpline" style="width:100%; height:400px;"></div>
+  </ion-card-content>
+</ion-card>
+<!-- fin agregados-->
+</ion-content>
