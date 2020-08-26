@@ -19,7 +19,7 @@ echo "Inicializa PHPMyAdmin"
 ./run_phpadmin.sh mysql-net mysql-server $PUERTO_PHP &
 sleep 5
 echo "Inicializa NodeJS"
-./serve_node_app_net.sh "$PWD"/ws ./ws/index.js $PUERTO_JS mysql-net &
+./serve_node_app_net.sh "$PWD" ws/index.js $PUERTO_JS mysql-net &
 sleep 5
 echo "Inicia Aplicación Ionic"
 cd ./ion
