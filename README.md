@@ -4,7 +4,7 @@ Autor: Rafael Oliva - Docente: Brian Ducca
 # Introducción
 
 Este proyecto es el trabajo final de la materia Desarrollo de Aplicaciones Multimedia  (DAM)
-de la EspIoT / MIoT 2020 (FIUBA), y consta de dos directorios documentales del desarrollo y uno /TPFinalv4 con el código fuente del Proyecto, con su README correspondiente.
+de la EspIoT / MIoT 2020 (FIUBA), y consta de dos directorios documentales (uno del desarrollo de la Materia, y otro de los requerimientos del Trabajo Final) mas el principal /TPFinalv4 con el código fuente del Proyecto, con su README correspondiente.
 
 Dicho Proyecto consiste de un Sistema de Riego Automatizado,  que recopila información de sensores tipo tensiómetro para humedad de suelo, a efectos de controlar apertura y cierre de valvulas de riego asociadas al sector en que se encuentra el sensor.
 
